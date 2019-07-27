@@ -64,7 +64,7 @@ export const hotels: IHotel[] = [
   {
     img: 'https://www.nationalgeographic.com/content/dam/travel/Guide-Pages/europe/austria/Austria_NationalGeographic_2618017.ngsversion.1501174663803.adapt.1900.1.jpg',
     address: 'Austria',
-    phone:  +36665989712,   // дополнительно задание pipe для форматирования
+    phone:  +35659897121,   // дополнительно задание pipe для форматирования
     weather: {
        title: 'Vena, Austria',
        icon: 'assets/images/...',

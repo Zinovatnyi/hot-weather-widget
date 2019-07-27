@@ -5,9 +5,7 @@ import { IHotel } from './mock';
   name: 'filterPipe'
 })
 export class FilterPipePipe implements PipeTransform {
-  public transform(hotels: IHotel[]): IHotel[] {
-       return hotels.filter((hotel: IHotel) => {
-        return String(hotel.phone).replace(/(\d{2})(\d{2})(\d{3})(\d{2})(\d{2})/, '+$1 ($2) $3-$4-$5');
-    });
+  public transform(phone: number): string {
+        return String(phone).replace(/(\d{2})(\d{2})(\d{3})(\d{2})(\d{2})/, '+$1 ($2) $3-$4-$5');
   }
 }

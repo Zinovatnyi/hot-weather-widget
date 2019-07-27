@@ -1,7 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { hotels$, IHotel } from '../mock';
 import { Observable } from 'rxjs';
-import { FilterPipePipe } from '../filter-pipe.pipe';
 
 @Component({
   selector: 'app-menu',
@@ -12,8 +11,6 @@ export class MenuComponent implements OnInit {
   public hotels$: Observable<IHotel[]> = hotels$;
   public hotels: IHotel[] = [];
   public selectedHotel: IHotel;
-  public telephoneTransform: any;
-  public filterPipePipe: FilterPipePipe;
 
   @Output()
   public setMenuControl = new EventEmitter();
@@ -30,10 +27,4 @@ export class MenuComponent implements OnInit {
     this.selectedHotel = hotel;
     this.setMenuControl.emit(this.selectedHotel);
   }
-
-  public toTransformTelephone() {
-
-  }
-
-
 }

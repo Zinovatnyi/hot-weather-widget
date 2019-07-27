@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { IHotel, IWeather } from '../mock';
+import { IHotel } from '../mock';
 
 @Component({
   selector: 'app-social-info',
